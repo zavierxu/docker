@@ -2,7 +2,7 @@ FROM yikyo/base-alpine:latest
 
 MAINTAINER yikyo <yikyo666@gmail.com>
 
-RUN apk add samba samba-common-tools && rm -rf /var/cache/apk/*
+RUN apk add samba && rm -rf /var/cache/apk/*
 
 ADD smb.conf /etc/samba
 
