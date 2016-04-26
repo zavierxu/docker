@@ -14,4 +14,4 @@ ENV TIMEOUT 300
 
 EXPOSE $SERVER_PORT
 
-ENTRYPOINT ["/usr/bin/ssserver", "-s", "$SERVER_ADDR", "-p", "$SERVER_PORT", "-k", "$PASSWORD", "-m", "$METHOD", "-t", "$TIMEOUT"]
+ENTRYPOINT ["/usr/bin/ssserver", "-s", "${SERVER_ADDR}", "-p", "${SERVER_PORT}", "-k", "${PASSWORD}", "-m", "${METHOD}", "-t", "${TIMEOUT}"]
