@@ -10,4 +10,4 @@ EXPOSE 137/udp 138/udp 139/tcp 445/tcp
 
 VOLUME ["/home/workspace"]
 
-ENTRYPOINT ["smbd", "--foreground", "--log-stdout"]
+ENTRYPOINT ["smbd", "-FS"]
