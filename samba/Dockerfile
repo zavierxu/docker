@@ -6,7 +6,7 @@ RUN apk add --update samba && rm -rf /var/cache/apk/*
 
 ADD smb.conf /etc/samba
 
-EXPOSE 137/udp 138/udp 139/tcp 445/tcp
+EXPOSE 139/tcp 445/tcp
 
 VOLUME ["/home/workspace"]
 
