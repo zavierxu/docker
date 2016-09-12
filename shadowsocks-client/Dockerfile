@@ -1,6 +1,6 @@
-FROM alpine:3.3
+FROM alpine:3.4
 
-MAINTAINER yikyo <yikyo666@gmail.com>
+MAINTAINER zavierxu <zavierxu@gmail.com>
 
 RUN apk add --update py-pip && rm -rf /var/cache/apk/*
 
